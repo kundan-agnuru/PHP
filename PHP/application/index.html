@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>facebook</title>
+</head>
+<body bgcolor=black>
+
+<marquee><FONT SIZE=8  COLOR=RED>SIGN UP AND LOGIN FORM</FONT></MARQUEE>
+
+<form action =" <?php echo site_url('control1/login')?>" method="post">
+
+<div style="  border:8px groove fuchsia; float:right; margin-right:200px;margin-top:225px;background-color:lightslategray;height:125px;width:300px;">
+
+<table cellspacing="5px" style="color:lime">
+<caption><font color=blue>LOGIN DETAILS </font> </caption>
+
+<tr>
+<td>Email-id:</td><td>
+<input type="text" name="id" size=20> </td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td>
+<input type="password" name="pwd1" size=20> </td>
+</tr>
+
+<tr>
+<td>
+<button type="submit" class="btn btn-block">Login</button>
+</td>
+<td><input type="reset" name="reset" value="clear">
+</td>
+</tr>
+
+</table>
+</div>
+ </form>
+<form action="<?php echo site_url('control1/registration')?>" method="post" enctype="multipart/form-data">
+<div style=" border:8px groove fuchsia; float:left; margin-left:200px;margin-top:150px;background-color:lightslategray;height:350px;width:400px;">
+
+<table cellspacing="5px" style="color:lime">
+<caption> <font color=blue> SIGN UP </font> </caption>
+
+
+<tr>
+<td>First Name:</td>
+<td><input type="text" name="n1" placeholder="first name" size=20> </td>
+</tr>
+
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="n2" placeholder="last name" size=20> </td>
+</tr>
+
+<tr>
+<td>Surname:</td>
+<td><input type="text" name="n3" placeholder="surname" size=20> </td>
+</tr>
+
+
+<tr>
+<td>Date of Birth:</td>
+<td><input type="date" name="d1"> </td>
+</tr>
+
+
+<tr>
+<td>Contact:</td>
+<td><input type="text" name="n4"  size=20> </td>
+</tr>
+
+<tr>
+<td>Nationality:</td>
+<td>
+  <select name="nationality">
+   <option value="Nationality">Nationality</option>
+  <option value="Indian">Indian</option>
+  <option value="American">American</option>
+  <option value="Pakisthani">Pakisthani</option>
+  <option value="Other">Other</option>
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender"  value="female" checked="check">Female</td>
+</tr>
+
+
+<tr>
+<td>Email-id:</td><td>
+<input type="text"  name="id" placeholder="email-id" size=20> </td>
+</tr>
+
+<tr>
+<td> New Password:
+</td><td><input type="password" name="pwd1" placeholder="new password" size=20> </td>
+</tr>
+
+<tr>
+<td> Conform Password:</td>
+<td>
+<input type="password" name="pwd2" placeholder="conform password" size=20> </td>
+</tr>
+<tr>
+<td> Profile photo:
+</td><td><input type="file" name="img"  > </td>
+</tr>
+<tr>
+<td>
+<input type="submit"" name="submit" value="Sign Up">
+</td>
+<td><input type="reset" name="reset" value="clear">
+</td>
+</tr>
+
+</table>
+</div>
+</form>
+</body>
+</html>
